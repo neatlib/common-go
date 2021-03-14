@@ -1,1 +1,1 @@
-# go-common
+# common-go library
