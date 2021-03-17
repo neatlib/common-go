@@ -3,7 +3,7 @@ package common
 import (
 	"sync/atomic"
 
-	"github.com/neatio-project/neatio/log"
+	"github.com/neatlab/neatio/log"
 )
 
 type Service interface {
