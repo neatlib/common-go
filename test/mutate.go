@@ -1,7 +1,7 @@
 package test
 
 import (
-	. "github.com/neatio-project/go-common"
+	. "github.com/neatlib/common-go"
 )
 
 // Contract: !bytes.Equal(input, output) && len(input) >= len(output)
