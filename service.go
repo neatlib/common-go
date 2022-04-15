@@ -133,6 +133,9 @@ func (bs *BaseService) Stop() bool {
 		close(bs.Quit)
 		if atomic.LoadUint32(&bs.started) == 1 {
 			atomic.StoreUint32(&bs.started, 0)
+				if bs.logger != nil {
+		bs.logger.Infof("Stopped %v (%v)", bs.name, bs.impl)
+		}
 		}
 		if bs.logger != nil {
 			bs.logger.Infof("Stopped %v (%v)", bs.name, bs.impl)
